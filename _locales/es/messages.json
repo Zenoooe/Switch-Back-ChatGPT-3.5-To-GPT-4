@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "Cambiar la conversación de ChatGPT 3.5 a GPT-4 y viceversa"
+  },
+  "extensionDescription": {
+    "message": "Una extensión de Chrome para alternar entre los modelos GPT-3.5 y GPT-4 en el chat de OpenAI."
+  },
+  "activateButton": {
+    "message": "Activar GPT-4"
+  },
+  "coffeeButton": {
+    "message": "Invítame un café"
+  }
+}

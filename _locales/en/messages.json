@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "Switch ChatGPT 3.5 Conversation To GPT-4"
+  },
+  "extensionDescription": {
+    "message": "A Chrome extension to toggle between GPT-3.5 and GPT-4 models on OpenAI chat."
+  },
+  "activateButton": {
+    "message": "Activate GPT-4"
+  },
+  "coffeeButton": {
+    "message": "Buy Me A Coffee"
+  }
+}

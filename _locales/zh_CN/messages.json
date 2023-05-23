@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "切换 ChatGPT 3.5 至 GPT-4"
+  },
+  "extensionDescription": {
+    "message": "一个用于在 OpenAI 聊天中在 GPT-3.5 和 GPT-4 模型之间切换的 Chrome 扩展。"
+  },
+  "activateButton": {
+    "message": "激活 GPT-4"
+  },
+  "coffeeButton": {
+    "message": "请我喝咖啡"
+  }
+}

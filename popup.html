@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <button id="toggleButton" style="
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      color: rgb(64, 65, 79);
+      border: 1px solid rgb(217, 217, 227);
+      background-color: #FFFFFF;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;">
+      Switch GPT3.5 & 4
+    </button>
+
+    <a href="https://cotton-humerus-571.notion.site/3f12fb20a6a241cd8c32195ea1acb1e2?v=046f690dccfd4f438cc30b21a8e7cdea" target="_blank">Buy Me A Coffee</a>
+
+    <script>
+      chrome.i18n.getAcceptLanguages((languages) => {
+        const languageCode = languages[0] || 'en';
+        const activateButton = document.getElementById('toggleButton');
+        const coffeeButton = document.querySelector('a');
+
+        chrome.i18n.getMessage('activateButton', (message) => {
+          activateButton.innerText = message;
+        });
+
+        chrome.i18n.getMessage('coffeeButton', (message) => {
+          coffeeButton.innerText = message;
+        });
+      });
+
+      document.getElementById('toggleButton').addEventListener('click', () => {
+        chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+          chrome.tabs.executeScript(tabs[0].id, {
+            file: 'content.js',
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
